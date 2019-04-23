@@ -1,0 +1,14 @@
+{
+    "explorer.confirmDelete": false,
+    "macros": {
+        "run_selected": [
+            "workbench.action.terminal.runSelectedText",
+            "workbench.action.terminal.toggleTerminal"
+        ]
+    },
+    "editor.tabCompletion": "on",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "explorer.confirmDragAndDrop": false,
+    "python.terminal.activateEnvironment":false,
+    "python.linting.pylintArgs": ["--disable=all", "--enable=F,E,unreachable,duplicate-key,unnecessary-semicolon,global-variable-not-assigned,unused-variable,binary-op-exception,bad-format-string,anomalous-backslash-in-string,bad-open-mode"]
+}
