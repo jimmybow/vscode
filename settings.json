@@ -13,14 +13,13 @@
             "sequence": [
                 {"command": "workbench.action.terminal.sendSequence", "args": { "text": "%cpaste\u000D" }},
                 "editor.action.clipboardCopyAction",
-                "workbench.action.terminal.paste",   
+                "workbench.action.terminal.paste",
                 "workbench.action.focusActiveEditorGroup",
-                "editor.action.insertLineBefore",
-                {"command": "type", "args": { "text": "\u000D--" }},
-                "cursorUpSelect",
+                "cursorHome",
+                {"command": "type", "args": { "text": "\u000D--\u000D" }},
+                "cursorLeftSelect","cursorLeftSelect","cursorLeftSelect","cursorLeftSelect"
                 "editor.action.clipboardCutAction",
-                "deleteRight",
-                "workbench.action.terminal.paste"
+                "workbench.action.terminal.paste"        
             ]
         }
     ],
