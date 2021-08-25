@@ -1,13 +1,31 @@
 {
     "explorer.confirmDelete": false,
-    "macros": {
-        "run_selected": [
-            "workbench.action.terminal.runSelectedText",
-            "workbench.action.terminal.toggleTerminal"
-        ]
-    },
+    "multiCommand.commands": [
+        {
+            "command": "run_selected",
+            "sequence": [
+                "workbench.action.terminal.runSelectedText",
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "command": "run_selected_ipython",
+            "sequence": [
+                {"command": "workbench.action.terminal.sendSequence", "args": { "text": "%cpaste\u000D" }},
+                "editor.action.clipboardCopyAction",
+                "workbench.action.terminal.paste",   
+                "workbench.action.focusActiveEditorGroup",
+                "editor.action.insertLineBefore",
+                {"command": "type", "args": { "text": "\u000D--" }},
+                "cursorUpSelect",
+                "editor.action.clipboardCutAction",
+                "deleteRight",
+                "workbench.action.terminal.paste"
+            ]
+        }
+    ],
     "editor.tabCompletion": "on",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "explorer.confirmDragAndDrop": false,
     "python.terminal.activateEnvironment":false,
     "python.linting.pylintArgs": ["--disable=all", "--enable=F,E,unreachable,duplicate-key,unnecessary-semicolon,global-variable-not-assigned,unused-variable,binary-op-exception,bad-format-string,anomalous-backslash-in-string,bad-open-mode"]
