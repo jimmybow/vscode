@@ -1,10 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+enter",
-        "command": "macros.run_selected"
-    },
-    {
         "key": "f2",
         "command": "-editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -124,5 +120,13 @@
         "key": "shift+alt+f12",
         "command": "-references-view.find",
         "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "run_selected_ipython"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "run_selected"
     }
 ]
