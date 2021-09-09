@@ -1,4 +1,4 @@
-{
+{   // July 2021 (version 1.59)
     "explorer.confirmDelete": false,
     "multiCommand.commands": [
         {
@@ -24,6 +24,7 @@
             ]
         }
     ],
+    "update.mode": "none",
     "editor.tabCompletion": "on",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "explorer.confirmDragAndDrop": false,
