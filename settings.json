@@ -17,10 +17,10 @@
                 "workbench.action.focusActiveEditorGroup",
                 "cursorHome",
                 {"command": "type", "args": { "text": "\u000D--\u000D" }},
-                "cursorLeftSelect","cursorLeftSelect","cursorLeftSelect","cursorLeftSelect"
+                "cursorLeftSelect","cursorLeftSelect","cursorLeftSelect","cursorLeftSelect",
                 "editor.action.clipboardCutAction",
                 "workbench.action.terminal.paste",
-                "workbench.action.focusActiveEditorGroup"  
+                "workbench.action.focusActiveEditorGroup"
             ]
         }
     ],
