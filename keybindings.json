@@ -29,7 +29,7 @@
         "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+f1",
+        "key": "ctrl+oem_5",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
@@ -90,10 +90,6 @@
     },
     {
         "key": "ctrl+1",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+oem_5",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
