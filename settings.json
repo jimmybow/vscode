@@ -1,4 +1,4 @@
-{   // July 2021 (version 1.59)
+{   // 03 2024 (version 1.87.2)
     "explorer.confirmDelete": false,
     "multiCommand.commands": [
         {
@@ -25,10 +25,46 @@
         }
     ],
     "update.mode": "none",
-    "update.enableWindowsBackgroundUpdates": false
+    "update.enableWindowsBackgroundUpdates": false,
     "editor.tabCompletion": "on",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "explorer.confirmDragAndDrop": false,
     "python.terminal.activateEnvironment":false,
-    "python.linting.pylintArgs": ["--disable=all", "--enable=F,E,unreachable,duplicate-key,unnecessary-semicolon,global-variable-not-assigned,unused-variable,binary-op-exception,bad-format-string,anomalous-backslash-in-string,bad-open-mode"]
+    "python.linting.pylintArgs": [
+        "--disable=all",
+        "--enable=F,E,unreachable,duplicate-key,unnecessary-semicolon,global-variable-not-assigned,unused-variable,binary-op-exception,bad-format-string,anomalous-backslash-in-string,bad-open-mode"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "WSL": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
